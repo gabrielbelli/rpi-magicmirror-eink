@@ -44,7 +44,7 @@ const job = new CronJob({
       });
 
       // open the MagicMirror site with puppeteer
-      await page.goto(`http://localhost:${global.gConfig.magicmirror_port}`);
+      await page.goto(`${global.gConfig.magicmirror_protocol}://${global.gConfig.magicmirror_host}:${global.gConfig.magicmirror_port}`);
 
       // wait x seconds to load the complete content of the MagicMirror site
       // change it in config.js "wait_to_load"
