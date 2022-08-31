@@ -1,4 +1,6 @@
 var config = {
+  "magicmirror_protocol": "http", // magic mirror protocol (http or https)
+  "magicmirror_host": "localhost", // magic mirror host
   "magicmirror_port": 8080, // magic mirror port
   "display_width": 640, // eink display height in px
   "display_height": 384, // eink display width in px
